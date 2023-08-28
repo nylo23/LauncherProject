@@ -14,15 +14,31 @@ public:
         ImGui::Begin("Launch Games");
 
         //STEAM LAUNCHER
-        (ImGui::TextWrapped("Steam Games"));
+        (ImGui::TextWrapped("\nSteam Games"));
 
         if (ImGui::Button("CSGO"))
         {
             system("start steam://run/730");
         }
 
+        if (ImGui::Button("Bloons TD6"))
+        {
+            system("start steam://rungameid/960090");
+        }
+
+        if (ImGui::Button("Sniper Elite 5"))
+        {
+            system("start steam://rungameid/1029690");
+        }
+      
+        if (ImGui::Button("Brawlhalla"))
+        {
+            system("start steam://rungameid/291550");
+        }
+
+
         //EPIC GAMES LAUNCHER
-        (ImGui::TextWrapped("Epic Games"));
+        (ImGui::TextWrapped("\nEpic Games\n"));
         if (ImGui::Button("Fortnite"))
         {
 
@@ -31,12 +47,7 @@ public:
 
         }
 
-        //MISCELANEOUS GAMES
-        (ImGui::TextWrapped("Misc"));
-        if (ImGui::Button("Osu!"))
-        {
-            system("start C:\\Users\\nylo\\AppData\\Local\\osu!\\osu!.exe");
-        }
+       
 
         ImGui::End();
 
